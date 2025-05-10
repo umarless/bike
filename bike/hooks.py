@@ -242,3 +242,30 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+fixtures = [
+    {
+        "dt": "Item Group",
+        "filters": [
+            [
+                "name", "in",
+                [
+                    "Bike",
+                    "Scooter",
+                    "Spare Parts"
+                ]
+            ]
+        ]
+    },
+    {
+        "dt": "Property Setter",
+        "filters": [
+            [
+                "name", "in",
+                [
+                    "Item-main-field_order",
+                    "Item-item_group-default"
+                ]
+            ]
+        ]
+    }
+]
