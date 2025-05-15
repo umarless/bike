@@ -1,0 +1,52 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Model",
+  "make": "Honda",
+  "model_name": "Activa 3G",
+  "modified": "2025-05-10 18:29:28.332841",
+  "name": "Activa 3G",
+  "type": null,
+  "year": 2012
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Model",
+  "make": "Honda",
+  "model_name": "Shine SP",
+  "modified": "2025-05-10 18:32:05.379343",
+  "name": "Shine SP",
+  "type": "Bike",
+  "year": 2016
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Model",
+  "make": "Yamaha",
+  "model_name": "FZ",
+  "modified": "2025-05-15 12:00:34.278996",
+  "name": "FZ",
+  "type": "Bike",
+  "year": 2022
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Model",
+  "make": "Bajaj",
+  "model_name": "Pulsar",
+  "modified": "2025-05-15 12:01:23.002559",
+  "name": "Pulsar",
+  "type": "Bike",
+  "year": 2023
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Model",
+  "make": "Ola Electrics",
+  "model_name": "Ola S1 Pro",
+  "modified": "2025-05-15 12:02:50.244620",
+  "name": "Ola S1 Pro",
+  "type": "EV",
+  "year": 2024
+ }
+]

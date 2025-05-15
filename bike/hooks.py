@@ -243,6 +243,7 @@ app_license = "mit"
 # }
 
 fixtures = [
+    {"dt": "Model"},
     {
         "dt": "Item Group",
         "filters": [
