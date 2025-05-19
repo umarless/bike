@@ -245,6 +245,17 @@ app_license = "mit"
 fixtures = [
     {"dt": "Model"},
     {
+        "dt": "Custom Field",
+        "filters": [
+            [
+                "name", "in",
+                [
+                    "Item-custom_model"
+                ]
+            ]
+        ]
+    },
+    {
         "dt": "Item Group",
         "filters": [
             [
