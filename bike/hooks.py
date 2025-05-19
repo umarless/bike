@@ -268,7 +268,11 @@ fixtures = [
                     "Purchase Invoice-is_paid-default",
                     "Purchase Invoice-update_stock-default",
                     "Supplier-supplier_type-default",
-                    "Supplier-supplier_type-read_only"
+                    "Supplier-supplier_type-read_only",
+                    "Purchase Invoice-main-field_order",
+                    "Purchase Invoice-payments_section-collapsible",
+                    "Purchase Invoice-taxes_section-collapsible",
+                    "Purchase Invoice-totals-depends_on"
                 ]
             ]
         ]
