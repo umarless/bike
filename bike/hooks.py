@@ -264,7 +264,11 @@ fixtures = [
                 "name", "in",
                 [
                     "Item-main-field_order",
-                    "Item-item_group-default"
+                    "Item-item_group-default",
+                    "Purchase Invoice-is_paid-default",
+                    "Purchase Invoice-update_stock-default",
+                    "Supplier-supplier_type-default",
+                    "Supplier-supplier_type-read_only"
                 ]
             ]
         ]
