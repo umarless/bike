@@ -257,6 +257,28 @@ fixtures = [
             ]
         ]
     },
+     {"dt": "Custom Field", "filters": [
+        [
+            "name", "in", [
+                "Item-custom_chassis_number",
+                "Item-custom_condition",
+                "Item-custom_color",
+                "Item-custom_year_of_manufacture_",
+                "Item-custom_rc_available",
+                "Item-custom_engine_number",
+                "Item-custom_insurance_valid_till",
+                "Item-custom_column_break_h9e0g",
+                "Item-custom_fuel_type",
+                "Item-custom_service_history_available_",
+                "Item-custom_model",
+                "Item-custom_quoted_price",
+                "Item-custom_best_price",
+                "Item-custom_kilometers",
+                "Item-custom_number_of_owners",
+                "Item-custom_registration_number"
+            ]
+        ]
+    ]},
     {
         "dt": "Property Setter",
         "filters": [
@@ -268,7 +290,14 @@ fixtures = [
                     "Purchase Invoice-is_paid-default",
                     "Purchase Invoice-update_stock-default",
                     "Supplier-supplier_type-default",
-                    "Supplier-supplier_type-read_only"
+                    "Supplier-supplier_type-read_only",
+                    "Item-item_name-bold",
+                    "Item-item_code-label",
+                    "Item-main-field_order",
+                    "Item-item_name-hidden",
+                    "Item-item_name-options",
+                    "Item-main-title_field",
+                    "Item-main-field_order"
                 ]
             ]
         ]
