@@ -1,0 +1,230 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SR-{MM}-{YY}-{######}",
+ "creation": "2025-05-22 12:00:41.768338",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "request_information_section",
+  "request_date",
+  "expected_completion_date",
+  "column_break_zooy",
+  "priority",
+  "status",
+  "vehicle_details_section",
+  "vehicle_reg_number",
+  "vehicle_model",
+  "model_year",
+  "tyre",
+  "column_break_ljiz",
+  "fuel",
+  "odometer",
+  "upload_bike_image",
+  "upload_bike_video",
+  "service_details_section",
+  "service_tasks_completed",
+  "column_break_yjmz",
+  "technician_name",
+  "final_inspector_name",
+  "customer_details_section",
+  "purchaser_name",
+  "column_break_quvr",
+  "purchase_date",
+  "parts_infromation_section",
+  "spare_part",
+  "column_break_vwdi",
+  "paint_job_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "request_information_section",
+   "fieldtype": "Section Break",
+   "label": "Request Information"
+  },
+  {
+   "fieldname": "request_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Request date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "expected_completion_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Expected Completion Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\nLow\nMedium\nHigh"
+  },
+  {
+   "fieldname": "column_break_zooy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPending\nIn Progress\nCompleted"
+  },
+  {
+   "fieldname": "vehicle_details_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Details"
+  },
+  {
+   "fieldname": "vehicle_reg_number",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle Reg. Number",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "vehicle_reg_number.custom_model",
+   "fieldname": "vehicle_model",
+   "fieldtype": "Data",
+   "label": "Vehicle Model",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "vehicle_reg_number.custom_year_of_manufacture_",
+   "fieldname": "model_year",
+   "fieldtype": "Data",
+   "label": "Model Year",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tyre",
+   "fieldtype": "Data",
+   "label": "Tyre"
+  },
+  {
+   "fetch_from": "vehicle_reg_number.custom_fuel_type",
+   "fieldname": "fuel",
+   "fieldtype": "Data",
+   "label": "Fuel",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ljiz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "vehicle_reg_number.custom_kilometers",
+   "fieldname": "odometer",
+   "fieldtype": "Data",
+   "label": "Odometer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "upload_bike_image",
+   "fieldtype": "Attach",
+   "label": "Upload Bike Image"
+  },
+  {
+   "fieldname": "upload_bike_video",
+   "fieldtype": "Attach",
+   "label": "Upload Bike Video"
+  },
+  {
+   "fieldname": "service_details_section",
+   "fieldtype": "Section Break",
+   "label": "Service Details"
+  },
+  {
+   "fieldname": "service_tasks_completed",
+   "fieldtype": "Small Text",
+   "label": "Service Tasks Completed"
+  },
+  {
+   "fieldname": "column_break_yjmz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "technician_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Technician Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "final_inspector_name",
+   "fieldtype": "Data",
+   "label": "Final Inspector Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "purchaser_name",
+   "fieldtype": "Data",
+   "label": "Purchaser Name"
+  },
+  {
+   "fieldname": "column_break_quvr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purchase_date",
+   "fieldtype": "Date",
+   "label": "Purchase Date"
+  },
+  {
+   "fieldname": "parts_infromation_section",
+   "fieldtype": "Section Break",
+   "label": "Parts Infromation"
+  },
+  {
+   "fieldname": "spare_part",
+   "fieldtype": "Table",
+   "label": "Spare Part",
+   "options": "Spare Part Item"
+  },
+  {
+   "fieldname": "paint_job_details",
+   "fieldtype": "Table",
+   "label": "Paint Job Details",
+   "options": "Paint Service Item"
+  },
+  {
+   "fieldname": "column_break_vwdi",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-22 12:33:39.827201",
+ "modified_by": "Administrator",
+ "module": "Bike",
+ "name": "Service Request",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
