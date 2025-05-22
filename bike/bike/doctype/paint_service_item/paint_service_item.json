@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-22 10:38:08.458159",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "bike_part",
+  "selected_color",
+  "column_break_hduz",
+  "quantity",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "bike_part",
+   "fieldtype": "Link",
+   "label": "Bike Part",
+   "options": "Paintable Component"
+  },
+  {
+   "fieldname": "selected_color",
+   "fieldtype": "Color",
+   "label": "Selected Color"
+  },
+  {
+   "fieldname": "column_break_hduz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-22 12:37:22.132169",
+ "modified_by": "Administrator",
+ "module": "Bike",
+ "name": "Paint Service Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
