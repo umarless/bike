@@ -297,7 +297,11 @@ fixtures = [
                     "Item-item_name-hidden",
                     "Item-item_name-options",
                     "Item-main-title_field",
-                    "Item-main-field_order"
+                    "Item-main-field_order",
+                    "Purchase Invoice-main-field_order",
+                    "Purchase Invoice-payments_section-collapsible",
+                    "Purchase Invoice-taxes_section-collapsible",
+                    "Purchase Invoice-totals-depends_on"
                 ]
             ]
         ]
